@@ -1,1 +1,1 @@
-# AplikacjeDesktopoweIMobilne
+# klasa-2d-2021-2022
