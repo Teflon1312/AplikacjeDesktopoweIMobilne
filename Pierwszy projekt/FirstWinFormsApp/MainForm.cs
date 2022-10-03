@@ -36,5 +36,10 @@ namespace FirstWinFormsApp
         {
             MessageBox.Show("Witaj w pierwszym programie WinForms");
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
