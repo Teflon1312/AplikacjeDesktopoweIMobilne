@@ -24,7 +24,17 @@ namespace FirstWinFormsApp
 
         private void buttonSecond_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("benc");
+        }
 
+        private void buttonSecond_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void buttonFirst_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Witaj w pierwszym programie WinForms");
         }
     }
 }

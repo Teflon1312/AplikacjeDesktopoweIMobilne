@@ -36,16 +36,18 @@ namespace FirstWinFormsApp
             // buttonFirst
             // 
             this.buttonFirst.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.buttonFirst.Location = new System.Drawing.Point(112, 38);
+            this.buttonFirst.Location = new System.Drawing.Point(121, 93);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(216, 114);
             this.buttonFirst.TabIndex = 0;
             this.buttonFirst.Text = "Przycisk";
             this.buttonFirst.UseVisualStyleBackColor = true;
+            this.buttonFirst.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonFirst_MouseClick);
             // 
             // buttonSecond
             // 
-            this.buttonSecond.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.buttonSecond.Font = new System.Drawing.Font("MV Boli", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.buttonSecond.ForeColor = System.Drawing.Color.MintCream;
             this.buttonSecond.Location = new System.Drawing.Point(475, 200);
             this.buttonSecond.Name = "buttonSecond";
             this.buttonSecond.Size = new System.Drawing.Size(346, 114);
@@ -54,6 +56,7 @@ namespace FirstWinFormsApp
             this.buttonSecond.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.buttonSecond.UseVisualStyleBackColor = true;
             this.buttonSecond.Click += new System.EventHandler(this.buttonSecond_Click);
+            this.buttonSecond.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonSecond_MouseClick);
             // 
             // MainForm
             // 
