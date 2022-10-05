@@ -41,5 +41,15 @@ namespace FirstWinFormsApp
         {
 
         }
+
+        private void buttonName_Click(object sender, EventArgs e)
+        {
+            string message = "Witaj " + textBoxName.Text + " w tym programie";
+            MessageBox.Show(message);
+            textBoxName.Text = "Adam";
+            labelName.Text = "Inny text";
+            
+
+        }
     }
 }

@@ -31,14 +31,15 @@ namespace FirstWinFormsApp
         {
             this.buttonFirst = new System.Windows.Forms.Button();
             this.buttonSecond = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.buttonName = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonFirst
             // 
             this.buttonFirst.Font = new System.Drawing.Font("Segoe UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.buttonFirst.Location = new System.Drawing.Point(105, 190);
+            this.buttonFirst.Location = new System.Drawing.Point(12, 200);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(216, 114);
             this.buttonFirst.TabIndex = 0;
@@ -50,7 +51,7 @@ namespace FirstWinFormsApp
             // 
             this.buttonSecond.Font = new System.Drawing.Font("MV Boli", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.buttonSecond.ForeColor = System.Drawing.Color.MintCream;
-            this.buttonSecond.Location = new System.Drawing.Point(475, 200);
+            this.buttonSecond.Location = new System.Drawing.Point(12, 335);
             this.buttonSecond.Name = "buttonSecond";
             this.buttonSecond.Size = new System.Drawing.Size(346, 114);
             this.buttonSecond.TabIndex = 1;
@@ -60,34 +61,53 @@ namespace FirstWinFormsApp
             this.buttonSecond.Click += new System.EventHandler(this.buttonSecond_Click);
             this.buttonSecond.MouseClick += new System.Windows.Forms.MouseEventHandler(this.buttonSecond_MouseClick);
             // 
-            // label1
+            // labelName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(117, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.labelName.AutoSize = true;
+            this.labelName.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.labelName.ForeColor = System.Drawing.Color.LightCoral;
+            this.labelName.Location = new System.Drawing.Point(12, 60);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(115, 30);
+            this.labelName.TabIndex = 2;
+            this.labelName.Text = "Podaj imie";
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(330, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(252, 23);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxName.Location = new System.Drawing.Point(12, 112);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(252, 23);
+            this.textBoxName.TabIndex = 3;
+            this.textBoxName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // buttonName
+            // 
+            this.buttonName.BackColor = System.Drawing.SystemColors.Desktop;
+            this.buttonName.ForeColor = System.Drawing.Color.Crimson;
+            this.buttonName.Location = new System.Drawing.Point(296, 112);
+            this.buttonName.Name = "buttonName";
+            this.buttonName.Size = new System.Drawing.Size(60, 22);
+            this.buttonName.TabIndex = 4;
+            this.buttonName.Text = "kliknij";
+            this.buttonName.TextAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.buttonName.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonName.UseVisualStyleBackColor = false;
+            this.buttonName.Click += new System.EventHandler(this.buttonName_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(859, 457);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.buttonName);
+            this.Controls.Add(this.textBoxName);
+            this.Controls.Add(this.labelName);
             this.Controls.Add(this.buttonSecond);
             this.Controls.Add(this.buttonFirst);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(400, 500);
             this.Name = "MainForm";
             this.Text = "Pierwszy program okienkowy";
             this.ResumeLayout(false);
@@ -99,8 +119,9 @@ namespace FirstWinFormsApp
 
         private System.Windows.Forms.Button buttonFirst;
         private System.Windows.Forms.Button buttonSecond;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.Button buttonName;
     }
 }
 
