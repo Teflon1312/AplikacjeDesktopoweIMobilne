@@ -34,6 +34,8 @@ namespace FirstWinFormsApp
             this.labelName = new System.Windows.Forms.Label();
             this.textBoxName = new System.Windows.Forms.TextBox();
             this.buttonName = new System.Windows.Forms.Button();
+            this.labelAge = new System.Windows.Forms.Label();
+            this.textBoxAge = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonFirst
@@ -51,7 +53,7 @@ namespace FirstWinFormsApp
             // 
             this.buttonSecond.Font = new System.Drawing.Font("MV Boli", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
             this.buttonSecond.ForeColor = System.Drawing.Color.MintCream;
-            this.buttonSecond.Location = new System.Drawing.Point(12, 335);
+            this.buttonSecond.Location = new System.Drawing.Point(178, 423);
             this.buttonSecond.Name = "buttonSecond";
             this.buttonSecond.Size = new System.Drawing.Size(346, 114);
             this.buttonSecond.TabIndex = 1;
@@ -75,6 +77,7 @@ namespace FirstWinFormsApp
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(12, 112);
+            this.textBoxName.Multiline = true;
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(252, 23);
             this.textBoxName.TabIndex = 3;
@@ -84,9 +87,9 @@ namespace FirstWinFormsApp
             // 
             this.buttonName.BackColor = System.Drawing.SystemColors.Desktop;
             this.buttonName.ForeColor = System.Drawing.Color.Crimson;
-            this.buttonName.Location = new System.Drawing.Point(296, 112);
+            this.buttonName.Location = new System.Drawing.Point(292, 112);
             this.buttonName.Name = "buttonName";
-            this.buttonName.Size = new System.Drawing.Size(60, 22);
+            this.buttonName.Size = new System.Drawing.Size(84, 58);
             this.buttonName.TabIndex = 4;
             this.buttonName.Text = "kliknij";
             this.buttonName.TextAlign = System.Drawing.ContentAlignment.BottomRight;
@@ -94,12 +97,34 @@ namespace FirstWinFormsApp
             this.buttonName.UseVisualStyleBackColor = false;
             this.buttonName.Click += new System.EventHandler(this.buttonName_Click);
             // 
+            // labelAge
+            // 
+            this.labelAge.AutoSize = true;
+            this.labelAge.BackColor = System.Drawing.Color.DarkKhaki;
+            this.labelAge.Location = new System.Drawing.Point(40, 160);
+            this.labelAge.Name = "labelAge";
+            this.labelAge.Size = new System.Drawing.Size(64, 15);
+            this.labelAge.TabIndex = 6;
+            this.labelAge.Text = "Podaj wiek";
+            this.labelAge.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // textBoxAge
+            // 
+            this.textBoxAge.BackColor = System.Drawing.Color.YellowGreen;
+            this.textBoxAge.Location = new System.Drawing.Point(139, 152);
+            this.textBoxAge.Name = "textBoxAge";
+            this.textBoxAge.Size = new System.Drawing.Size(104, 23);
+            this.textBoxAge.TabIndex = 8;
+            this.textBoxAge.TextChanged += new System.EventHandler(this.textBoxAge_TextChanged);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
-            this.ClientSize = new System.Drawing.Size(384, 461);
+            this.ClientSize = new System.Drawing.Size(793, 711);
+            this.Controls.Add(this.textBoxAge);
+            this.Controls.Add(this.labelAge);
             this.Controls.Add(this.buttonName);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
@@ -110,6 +135,7 @@ namespace FirstWinFormsApp
             this.MinimumSize = new System.Drawing.Size(400, 500);
             this.Name = "MainForm";
             this.Text = "Pierwszy program okienkowy";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,6 +148,8 @@ namespace FirstWinFormsApp
         private System.Windows.Forms.Label labelName;
         private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Button buttonName;
+        private System.Windows.Forms.Label labelAge;
+        private System.Windows.Forms.TextBox textBoxAge;
     }
 }
 

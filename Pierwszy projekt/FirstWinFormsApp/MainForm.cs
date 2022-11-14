@@ -48,7 +48,37 @@ namespace FirstWinFormsApp
             MessageBox.Show(message);
             textBoxName.Text = "Adam";
             labelName.Text = "Inny text";
-            
+
+            string strAge = textBoxAge.Text;    
+            if(string.IsNullOrWhiteSpace(strAge))
+            {
+                MessageBox.Show("nie podano wieku");
+                return;
+            }
+
+            int age; // = int.Parse(strAge);
+            if (!int.TryParse(strAge, out age))
+            {
+                MessageBox.Show("podaj cyfre a nie");
+                return;
+            }
+        
+        
+        
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxAge_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
