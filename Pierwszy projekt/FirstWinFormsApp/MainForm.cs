@@ -44,13 +44,9 @@ namespace FirstWinFormsApp
 
         private void buttonName_Click(object sender, EventArgs e)
         {
-            string message = "Witaj " + textBoxName.Text + " w tym programie";
-            MessageBox.Show(message);
-            textBoxName.Text = "Adam";
-            labelName.Text = "Inny text";
 
-            string strAge = textBoxAge.Text;    
-            if(string.IsNullOrWhiteSpace(strAge))
+            string strAge = textBoxAge.Text;
+            if (string.IsNullOrWhiteSpace(strAge))
             {
                 MessageBox.Show("nie podano wieku");
                 return;
@@ -62,9 +58,22 @@ namespace FirstWinFormsApp
                 MessageBox.Show("podaj cyfre a nie");
                 return;
             }
-        
-        
-        
+
+            if (age < 1)
+            {
+                MessageBox.Show("podaj liczbe dodatnia ");
+            }
+
+            string message = "";
+            if (age >= 18)
+                message = "jestes niepelnoletni";
+            else
+                message = "jestes pelnoletni";
+
+            message = "Witaj" + textBoxName.Text + "w tym programie " + message;
+            MessageBox.Show(message);
+
+
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -81,5 +90,9 @@ namespace FirstWinFormsApp
         {
 
         }
+
+        private void buttonAge_Click(object sender, EventArgs e)
+        {
+
     }
 }

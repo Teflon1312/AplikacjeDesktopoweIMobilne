@@ -36,6 +36,7 @@ namespace FirstWinFormsApp
             this.buttonName = new System.Windows.Forms.Button();
             this.labelAge = new System.Windows.Forms.Label();
             this.textBoxAge = new System.Windows.Forms.TextBox();
+            this.buttonAge = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonFirst
@@ -87,7 +88,7 @@ namespace FirstWinFormsApp
             // 
             this.buttonName.BackColor = System.Drawing.SystemColors.Desktop;
             this.buttonName.ForeColor = System.Drawing.Color.Crimson;
-            this.buttonName.Location = new System.Drawing.Point(292, 112);
+            this.buttonName.Location = new System.Drawing.Point(292, 77);
             this.buttonName.Name = "buttonName";
             this.buttonName.Size = new System.Drawing.Size(84, 58);
             this.buttonName.TabIndex = 4;
@@ -117,12 +118,23 @@ namespace FirstWinFormsApp
             this.textBoxAge.TabIndex = 8;
             this.textBoxAge.TextChanged += new System.EventHandler(this.textBoxAge_TextChanged);
             // 
+            // buttonAge
+            // 
+            this.buttonAge.Location = new System.Drawing.Point(292, 176);
+            this.buttonAge.Name = "buttonAge";
+            this.buttonAge.Size = new System.Drawing.Size(114, 23);
+            this.buttonAge.TabIndex = 9;
+            this.buttonAge.Text = "sprawdź wiek";
+            this.buttonAge.UseVisualStyleBackColor = true;
+            this.buttonAge.Click += new System.EventHandler(this.buttonAge_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(793, 711);
+            this.Controls.Add(this.buttonAge);
             this.Controls.Add(this.textBoxAge);
             this.Controls.Add(this.labelAge);
             this.Controls.Add(this.buttonName);
@@ -150,6 +162,7 @@ namespace FirstWinFormsApp
         private System.Windows.Forms.Button buttonName;
         private System.Windows.Forms.Label labelAge;
         private System.Windows.Forms.TextBox textBoxAge;
+        private System.Windows.Forms.Button buttonAge;
     }
 }
 
